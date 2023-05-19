@@ -1,0 +1,12 @@
+.vscode/
+build/obj/core/*.o
+build/obj/http/*.o
+build/debug/debug.log
+build/bin/webserv.exe
+config/*.cfg
+config/*.types
+.idea/
+.DS_Store
+CMakeLists.txt
+www/cookie/__pycache__
+www/upload/Studio _ Office Tour! (early 2023)-(1080p).mp4
