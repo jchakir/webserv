@@ -90,7 +90,7 @@ static Client* __client_request_handler_(Client* client, const Context* const co
 	Client	*cgi = 0;
 	Request	*request;
 	
-	__read_buffer_from_client_(client));
+	__read_buffer_from_client_(client);
 	if (client->getRequest() == 0 && client->getBuffer().find(END_HEADERS) != std::string::npos) {
 		request = reinterpret_cast<Request*>(HTTP::baseParser(client));
 		client->setRequest(request);
@@ -171,7 +171,7 @@ static Client* __cgi_response_handler_(Client* cgi)
 	Response	*response = cgi->getResponse();
 	bool		cgiFinished;
 
-	cgiFinished = __read_buffer_from_cgi_(cgi));
+	cgiFinished = __read_buffer_from_cgi_(cgi);
     if (response == 0 && cgi->getBuffer().find(END_HEADERS) != std::string::npos)
     {
 		response = reinterpret_cast<Response*>(HTTP::baseParser(cgi));
