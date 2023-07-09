@@ -1,6 +1,7 @@
 # Webserv
 This project is about writing My own HTTP server (HTTP/1.1).
 and be able to test it with an actual browser.
+Please read en.subject.pdf for more information about guidelines.
 
 this project is done with teammate [Mustapha-Annouaoui](https://github.com/Mustapha-Annouaoui) a great programmer.
 
